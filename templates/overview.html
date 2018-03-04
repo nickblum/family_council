@@ -16,9 +16,14 @@ Released   : 20130902
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
-	<script src="{{ url_for('static',filename='scripts/jquery-3.3.1.min.js') }}"></script>
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/default.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/fonts.css') }}">
+	<script src="{{ url_for('static',filename='scripts/jquery-3.3.1.min.js') }}"></script>
+	<script>
+		$( function(){
+			//alert( 'testing jquery on ready'); works!
+		} )
+	</script>
 </head>
 <body>
 <div id="page" class="container">
