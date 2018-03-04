@@ -33,15 +33,16 @@ Released   : 20130902
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
-<link href="templates/styles/default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="templates/styles/fonts.css" rel="stylesheet" type="text/css" media="all" />
+<!--<link href="styles/default.css" rel="stylesheet" type="text/css" media="all" />-->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/default.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/fonts.css') }}">
 
 </head>
 <body>
 <div id="page" class="container">
 	<div id="header">
 		<div id="logo">
-			<img src="../../../../images/icon.png" alt="" />
+			<img src="{{ url_for('static',filename='images/b.png') }}" alt="" />
 			<h1><a href="#">Blum Council</a></h1>
 			<span>Building a kickass family</span>
 		</div>
@@ -57,7 +58,7 @@ Released   : 20130902
 	</div>
 	<div id="main">
 		<div id="banner">
-			<img src="images/pic01.jpg" alt="" class="image-full" />
+			<img src="{{ url_for('static',filename='images/justice.jpg') }}" alt="" class="image-full" />
 		</div>
 		<div id="welcome">
 			<div class="title">
