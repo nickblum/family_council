@@ -1,19 +1,3 @@
-<!---<html>
-    <body>
-        Muhhahahahahahaha refoijrefoijfreoifje
-        {% for r in restaurants %}
-        <div>
-            <p>
-                {{r.name}}<br>
-                <a href={{url_for('restaurantEdit', restaurant_id=r.id)}}>Edit</a>&nbsp;
-                <a href={{url_for('restaurantDelete', restaurant_id=r.id)}}>Delete</a>
-            </p>
-        </div>
-        {% endfor %}
-    </body>
-</html>-->
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--
 Design by TEMPLATED
@@ -48,45 +32,19 @@ Released   : 20130902
 		</div>
 		<div id="menu">
 			<ul>
-				<li class="current_page_item"><a href="{{url_for('overview')}}" accesskey="1" title="">Overview</a></li>
+				<li><a href="{{url_for('overview')}}" accesskey="1" title="">Overview</a></li>
 				<li><a href={{url_for('council')}} accesskey="2" title="">Council</a></li>
 				<li><a href={{url_for('goals')}} accesskey="3" title="">Goals</a></li>
 				<li><a href={{url_for('history')}} accesskey="4" title="">History</a></li>
-				<li><a href={{url_for('settings')}} accesskey="5" title="">Settings</a></li>
+				<li class="current_page_item"><a href={{url_for('settings')}} accesskey="5" title="">Settings</a></li>
 			</ul>
 		</div>
 	</div>
 	<div id="main">
-		<div id="banner">
-			<img src="{{ url_for('static',filename='images/justice.jpg') }}" alt="" class="image-full" />
-		</div>
-		<div id="welcome">
-			<div class="title">
-				<h2>Integrity</h2>
-				<span class="byline">Through principles and perseverance, we build a greater world.</span>
-			</div>
-			<p>1. Do something. 2. Do something. 3. Finish all of the things</p>
-			<ul class="actions">
-				<li><a href="#" class="button">Etiam posuere</a></li>
-			</ul>
-		</div>
-		<div id="featured">
-			<div class="title">
-				<h2>Recent Activity</h2>
-				<span class="byline">Meetings and such as... or whatever</span>
-			</div>
-			<ul class="style1">
-				<li class="first">
-					<p class="date"><a href="#">Jan<b>05</b></a></p>
-					<h3><a href="#">Council</a></h3>
-					<p>
-						&bull;Thing 1 discussed -- should only show first three agenda items?<br>
-						&bull;Or allow expansion to show full description?<br>
-						&bull;Or just redirect to full meeting page?
-					</p>
-				</li>
-			</ul>
-		</div>
+		<div style="height:600px; width:100%">
+           Settings or whatever
+
+        </div>
 		<div id="copyright">
 			<span>&copy; FamilyCouncil. All rights reserved.</span>
 		</div>
